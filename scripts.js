@@ -37,20 +37,26 @@ function playRound() {
         console.log("It's a tie!");
     }   else if (userPlay == 'rock') {
         if (computerPlay == 'paper') {
+            computerScore++;
             console.log("Computer wins!");
         } else {
+            humanScore++;
             console.log("You win!");
         }
     }   else if (userPlay == 'paper') {
         if (computerPlay == 'rock') {
+            humanScore++;
             console.log("You win!");
         } else {
+            computerScore++;
             console.log("Computer wins");
         }
     }   else {
         if (computerPlay == 'rock') {
+            computerScore++;
             console.log("Computer wins!");
         } else {
+            humanScore++;
             console.log("You Win!");
         }
     }
