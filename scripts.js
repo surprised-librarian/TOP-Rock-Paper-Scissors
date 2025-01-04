@@ -18,7 +18,7 @@ function getComputerChoice() {
 let userPlay;
 
 function getUserChoice() {
-    userPlay = prompt('Choose rock, paper, or scissors.');
+    userPlay = prompt('Choose rock, paper, or scissors.').toLowerCase;
 }
 
 //Declare score variables
