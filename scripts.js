@@ -73,6 +73,8 @@ function determineWinner(humanScore, computerScore) {
     }
 }
 
+let i = 0;
+
 function playGame() {
     while (i < 5) {
         playRound();
