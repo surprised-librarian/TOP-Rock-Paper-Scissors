@@ -63,15 +63,7 @@ function playRound() {
 
 }
 
-function determineWinner(humanScore, computerScore) {
-    if (humanScore == computerScore) {
-        console.log('It is a tie!');
-    }   else if (humanScore > computerScore) {
-        console.log('You win!');
-    }   else {
-        console.log('Computer wins!');
-    }
-}
+
 
 let i = 0;
 
@@ -81,7 +73,16 @@ function playGame() {
         console.log('The score is Human ' + humanScore + ' and Computer ' + computerScore);
         i++;
     }
-    determineWinner();
+    function determineWinner(humanScore, computerScore) {
+        if (humanScore > computerScore) {
+            console.log('You win the game!');
+        } else if (humanScore < computerScore) {
+            console.log('Computer wins the game!');
+        } else {
+            console.log('The game is a tie!');
+        }
+    }
+    determineWinner(humanScore, computerScore);
 }
 
 playGame();
