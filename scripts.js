@@ -76,7 +76,7 @@ function determineWinner(humanScore, computerScore) {
 function playGame() {
     while (i < 5) {
         playRound();
-        console.log('The score is Human ' + humanScore ' and Computer ' + computerScore);
+        console.log('The score is Human ' + humanScore + ' and Computer ' + computerScore);
         i++;
     }
     determineWinner();
