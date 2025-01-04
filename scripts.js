@@ -81,3 +81,5 @@ function playGame() {
     }
     determineWinner();
 }
+
+playGame();
