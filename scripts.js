@@ -63,4 +63,21 @@ function playRound() {
 
 }
 
-playRound();
+function determineWinner(humanScore, computerScore) {
+    if (humanScore == computerScore) {
+        console.log('It is a tie!');
+    }   else if (humanScore > computerScore) {
+        console.log('You win!');
+    }   else {
+        console.log('Computer wins!');
+    }
+}
+
+function playGame() {
+    while (i < 5) {
+        playRound();
+        console.log('The score is Human ' + humanScore ' and Computer ' + computerScore);
+        i++;
+    }
+    determineWinner();
+}
