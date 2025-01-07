@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors: The Odin Project</title>
     <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="selections">
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="selections" id="selections">
         <button id="rock">Rock</button>
         <button id="paper">Paper</button>
         <button id="scissors">Scissors</button>
@@ -16,12 +18,17 @@
         <div id="resultsStatementContainer">
             <p id="resultsStatement"></p>
         </div>
-        <div id="humanScoreContainer">
-            <p id="humanScore">0</p>
+        <div class="scoresContainer">
+            <div id="humanScoreContainer">
+                <p class="scoreLabel">Human</p>
+                <p id="humanScore">0</p>
+            </div>
+            <div id="computerScoreContainer">
+                <p class="scoreLabel">Computer</p>
+                <p id="computerScore">0</p>
+            </div>
         </div>
-        <div id="computerScoreContainer">
-            <p id="computerScore">0</p>
-        </div>
+        
     </div>
 </body>
 </html>

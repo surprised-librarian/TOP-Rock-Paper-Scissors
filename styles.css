@@ -1,0 +1,45 @@
+.html {
+    display: border-box;
+}
+
+body {
+    background-color: orange;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.selections {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rock, #paper, #scissors {
+    background-color: black;
+    color: white;
+    font-size: 4rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#results {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.scoresContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#humanScoreContainer, #computerScoreContainer {
+    background-color: black;
+    color: white;
+    font-size: 4rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    border: solid white 2px;
+    padding: 0 2rem;
+}
